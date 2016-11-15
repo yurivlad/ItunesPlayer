@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AlbumsActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_frame" />
+
+    <include layout="@layout/toolbar" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/search_input"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignRight="@+id/search_button"
+        android:layout_marginLeft="@dimen/margin_big"
+        android:layout_marginRight="56dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="@string/search"
+        android:inputType="text"
+        android:maxLength="24"
+        android:maxLines="1"
+        android:textColor="@android:color/white"
+        android:textColorHint="#c3c3c3"
+        android:textSize="@dimen/font_medium">
+
+        <requestFocus />
+    </android.support.v7.widget.AppCompatEditText>
+
+    <ImageButton
+        android:id="@+id/search_button"
+        style="@style/ImageButtonStyle"
+        android:layout_alignRight="@+id/erase"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/ic_search_white_24dp"
+        />
+
+    <ImageButton
+        android:id="@+id/erase"
+        style="@style/ImageButtonStyle"
+        android:layout_width="24dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_material"
+        android:src="@drawable/ic_close_white_24dp"
+         />
+</RelativeLayout>

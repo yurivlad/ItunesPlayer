@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ItunesSearch</string>
+    <string name="search">Введите имя музыканта</string>
+    <string name="connection_error">Ошибка соединения</string>
+    <string name="wait_please">Загружается</string>
+    <string name="no_permission">Функции недоступны</string>
+    <string name="enter_query">Запрос не может быть пустым</string>
+    <string name="check_connection">Проверьте интернет соединение</string>
+
+</resources>
